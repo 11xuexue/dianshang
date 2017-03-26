@@ -1,0 +1,128 @@
+#featuredslideshow { display: block; width: 600px; height: 360px; overflow: hidden; background: #000; }
+
+.svwp {width: 50px; height: 20px; background: #fff;} /*preloader stuff. do not modify!*/
+.svwp ul{position: relative; left: -999em;}/*preloader stuff. do not modify!*/
+.slideViewer { 
+position: relative;
+overflow: hidden; 
+margin: 0;
+padding: 0;
+}
+.slideViewer ul {  /*your list of images*/
+position: relative;
+left: 0;
+top: 0;
+width: 1%;
+list-style-type: none;
+margin: 0; 
+padding: 0;
+}
+.slideViewer ul li {
+float:left;
+}
+
+/*typographic info*/
+.slideViewer span.typo{ 
+padding: 10px; /* do not modify padding */
+background: #000;
+color: #fff;
+font: normal 10px Verdana;
+}
+
+.thumbSlider { /*the thumbnails slider*/
+overflow: hidden;
+width: 1%;
+}
+.thumbSlider ul { 
+list-style-type: none;
+margin: 0; 
+padding: 0;
+}
+.thumbSlider ul li{ 
+float:left;
+margin: 0;
+}
+.thumbSlider a{
+color: #fff;
+text-decoration: none;
+}
+.thumbSlider a img{
+border: 0;
+display: block;
+padding: 0;
+}
+.thumbSlider p.tmbrdr { /* the border above -not around- each thumb */
+/* width, height and top values are dynamically added by the script. Do not modify. */
+position:relative; 
+left: 0;
+font-size: 0.01em;
+left: 0;
+margin: 0;
+padding: 0;
+}
+
+a.left, a.right { /*the left and right buttons (links)*/
+background: transparent; /* could be any color  */
+color: #ff0000;
+font: bold 16px Arial;
+overflow: hidden;
+}
+a.left span, a.right span{
+
+}
+a.left img, a.right img{
+border: 0;
+}
+a.l_dis, a.r_dis {
+background: transparent; /* ALWAYS leave transparent. this is the 'disabled' state of the link !  */
+cursor: default;
+}
+a.l_dis span, a.r_dis span {
+display: none;
+}
+a:focus {outline:none;}
+
+.port-7{float: left; width: 100%; position: relative; overflow: hidden; text-align: center; border: 4px solid rgba(255, 255, 255, 0.9); overflow: hidden;}
+.port-7 .text-desc{opacity: 0; transition: 0.5s; color: #000;}
+
+.port-7.effect-1 img{transition: 0.5s; position: relative; width: 100%; left: 0;}
+.port-7.effect-1:hover img{left: 50%;}
+.port-7.effect-1 .text-desc{transform: perspective(600px) rotateY(90deg); transform-origin: left center 0; width: 50%; position: absolute; left: 0; top: 0;  padding: 18px 10px;}
+.port-7.effect-1:hover .text-desc{opacity: 1; transform: perspective(600px) rotateY(0deg); z-index: 99;}
+
+.port-7.effect-2 img{transition: 0.5s; position: relative; width: 100%; top: 0;}
+.port-7.effect-2:hover img{top: 50%;}
+.port-7.effect-2 .text-desc{transform: perspective(600px) rotateX(90deg); transform-origin: top center 0; width: 100%; position: absolute; left: 0; top: 0; height: 50%; padding: 5px 10px;}
+.port-7.effect-2:hover .text-desc{opacity: 1; transform: perspective(600px) rotateX(0deg); z-index: 99;}
+
+.port-7.effect-3 img{transition: 0.5s; position: relative; width: 100%; right: 0;}
+.port-7.effect-3:hover img{right: 50%;}
+.port-7.effect-3 .text-desc{transform: perspective(600px) rotateY(-90deg); transform-origin: right center 0; width: 50%; position: absolute; left: auto; right: 0; top: 0;  padding: 18px 10px;}
+.port-7.effect-3:hover .text-desc{opacity: 1; transform: perspective(600px) rotateY(0deg); z-index: 99;}
+/* effect-7 css end */
+
+/* effect-8 css */
+.port-8{float: left; width: 100%; position: relative; overflow: hidden; text-align: center; border: 4px solid rgba(255, 255, 255, 0.9); overflow: hidden;}
+.port-8 .text-desc{opacity: 0; transition: 0.5s; color: #000; padding: 45px 20px 20px;}
+
+.port-8.effect-1 img{transition: 0.5s;}
+.port-8.effect-1:hover img{transform: scale(1.1);}
+.port-8.effect-1 .text-desc{left: 0; position: absolute; top: 0; width: 100%; height: 100%; transform: scale(0);  backface-visibility: hidden;}
+.port-8.effect-1:hover .text-desc{opacity: 1; transform: scale(1); border-radius: 20%;}
+
+.port-8.effect-2 img{transition: 0.5s;}
+.port-8.effect-2:hover img{transform: scale(1.1);}
+.port-8.effect-2 .text-desc{left: 0; position: absolute; top: 0; width: 100%; height: 100%; transform: scale(0);  backface-visibility: hidden;}
+.port-8.effect-2:hover .text-desc{opacity: 1; transform: scale(1); border-radius: 50% 0 50% 0;}
+
+.port-8.effect-2 img{transition: 0.5s;}
+.port-8.effect-2:hover img{transform: scale(1.1);}
+.port-8.effect-2 .text-desc{left: 0; position: absolute; top: 0; width: 100%; height: 100%; transform: scale(0);  backface-visibility: hidden;}
+.port-8.effect-2:hover .text-desc{opacity: 1; transform: scale(1); border-radius: 50% 0 50% 0;}
+
+.port-8.effect-3 img{transition: 0.5s;}
+.port-8.effect-3:hover img{transform: scale(1.1);}
+.port-8.effect-3 .text-desc{left: 0; position: absolute; top: 0; width: 100%; height: 100%; transform: scale(0);  backface-visibility: hidden; background: none; padding: 40px 70px 20px;}
+.port-8.effect-3 .text-desc:before, .port-8.effect-3 .text-desc:after{background-color: #fff; border-radius: 50% 50% 0 0; content: ""; height: 100%; left: 50%; position: absolute; top: 0; transform: rotate(-50deg); transform-origin: 0 100% 0; width: 50%; z-index: -1;}
+.port-8.effect-3 .text-desc:after {left: 0; transform: rotate(50deg); transform-origin: 100% 100% 0;}
+.port-8.effect-3:hover .text-desc{opacity: 1; transform: scale(1);}
